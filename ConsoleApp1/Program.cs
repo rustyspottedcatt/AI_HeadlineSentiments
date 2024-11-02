@@ -8,7 +8,7 @@ using Microsoft.ML;
 using Microsoft.ML.Data;
 using Microsoft.ML.Trainers;
 
-namespace SentimentAnalysis
+namespace SmartSentiment
 {
     public class NewsData
     {
@@ -40,7 +40,7 @@ namespace SentimentAnalysis
 
     class Program
     {
-        private static readonly string apiKey = "1039938563e34e99a036618203764243";
+        private static readonly string apiKey = "YOUR_NEWS_API_KEY";
         private static readonly string apiUrl = $"https://newsapi.org/v2/top-headlines?category=general&apiKey={apiKey}";
         private static string filePath = @"/financial_news.csv";
 
